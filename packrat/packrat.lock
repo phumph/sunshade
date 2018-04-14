@@ -1,0 +1,58 @@
+PackratFormat: 1.4
+PackratVersion: 0.4.8.1
+RVersion: 3.3.3
+Repos: BioCsoft=https://bioconductor.org/packages/3.4/bioc,
+    BioCann=https://bioconductor.org/packages/3.4/data/annotation,
+    BioCexp=https://bioconductor.org/packages/3.4/data/experiment,
+    BioCextra=https://bioconductor.org/packages/3.4/extra,
+    CRAN=https://mirrors.nics.utk.edu/cran/
+
+Package: Matrix
+Source: CRAN
+Version: 1.2-12
+Hash: c134ceb3a533b93c266a93fd7e1b652c
+
+Package: Rcpp
+Source: CRAN
+Version: 0.12.14
+Hash: f9a2a481350397e53b0768bf488329cd
+
+Package: RcppEigen
+Source: CRAN
+Version: 0.3.3.4.0
+Hash: fc2e0281f9eea83d01a5a025c0d5c68b
+Requires: Matrix, Rcpp
+
+Package: TMB
+Source: CRAN
+Version: 1.7.12
+Hash: bdfa83626cfcc11fae52895ed47ef374
+Requires: Matrix, RcppEigen
+
+Package: glmmTMB
+Source: CRAN
+Version: 0.2.0
+Hash: e95f350468e708dd8dd1094c7d6369f3
+Requires: Matrix, RcppEigen, TMB, lme4
+
+Package: lme4
+Source: CRAN
+Version: 1.1-15
+Hash: 20019ced012c1c9006a28841692ed965
+Requires: Matrix, Rcpp, RcppEigen, minqa, nloptr
+
+Package: minqa
+Source: CRAN
+Version: 1.2.4
+Hash: 860f36fcff3e5bc62ecc97dab1a21d5f
+Requires: Rcpp
+
+Package: nloptr
+Source: CRAN
+Version: 1.0.4
+Hash: 8053df240a4635aeb54fc68c6de67709
+
+Package: packrat
+Source: CRAN
+Version: 0.4.8-1
+Hash: 6ad605ba7b4b476d84be6632393f5765
